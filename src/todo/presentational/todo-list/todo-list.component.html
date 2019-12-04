@@ -1,0 +1,10 @@
+<h1>Todos:</h1>
+<div>
+  <app-todo-item
+    *ngFor="let todo of todoList"
+    [todo]="todo"
+    (removeTodo)="removeTodo.emit($event)"
+    (completeTodo)="completeTodo.emit($event)"
+  >
+  </app-todo-item>
+</div>

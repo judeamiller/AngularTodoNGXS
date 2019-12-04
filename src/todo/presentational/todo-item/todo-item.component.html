@@ -1,0 +1,5 @@
+<div>
+  <span [ngClass]="{ complete: todo.completed }">{{ todo.text }}</span>
+  <button type="button" (click)="completeTodo.emit(todo)">Done</button>
+  <button type="button" (click)="removeTodo.emit(todo)">Delete</button>
+</div>

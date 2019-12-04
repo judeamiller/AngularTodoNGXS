@@ -1,0 +1,8 @@
+<h1>Add a Todo</h1>
+<form (ngSubmit)="submit()">
+  <mat-form-field>
+    <input matInput placeholder="Add Todo" name="label" [(ngModel)]="todo" />
+  </mat-form-field>
+
+  <button type="submit">Add todo</button>
+</form>
